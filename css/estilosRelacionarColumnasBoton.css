@@ -223,24 +223,21 @@
         }
         /* FIN Estilo retro pop up */
 		
-		table td.tablaHeader{
-			background: #F0AD77;
-			color:#fff;
-			}
-		table td.tablaHeader2{
-			background:#fff;
-			
-			}
-			
-			.btn_reiniciar{
-				background: #f0ad77;
-				width:100px;
-				height:60px;
-				color:#ffffff;
-				border:0;
-				cursor:pointer;
-				margin: 20px auto;
-				font-size:18px;
-				border-radius:5px;
-				
-				}
+	table td.tablaHeader{
+		background: #F0AD77;
+		color:#fff;
+	}
+	table td.tablaHeader2{
+		background:#fff;
+	}		
+	.btn_reiniciar{
+		background: #f0ad77;
+		width:100px;
+		height:60px;
+		color:#ffffff;
+		border:0;
+		cursor:pointer;
+		margin: 20px auto;
+		font-size:18px;
+		border-radius:5px;		
+	}
