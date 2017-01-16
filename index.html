@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="relacionar columnas con botón" />
+    <meta name="author" content="Adib Abud Jaso"  />
+    <title>Relaciona las columnas</title>
+    <link rel="stylesheet" type="text/css" href="css/estilosRelacionarColumnasBoton.css">
+    <script type="text/javascript" src="js/relacionarColumnasBoton.js"></script>
+    <title>Escoge la respuesta correcta para cada cuestión</title>
+</head>
+<body>
+
+<div id="main">
+    <table class="tablaEjercicio">
+        <tr>
+            <!-- <td class="contestada">1.	Motivo por el cual Marx critica la propuesta dialéctica de Hegel: </td> -->
+            <td>1.	Motivo por el cual Marx critica la propuesta dialéctica de Hegel: </td>
+            <td class="boton"><button></button></td>
+            <td class="celdaRespuesta">Separación del sentido real</td>
+        </tr>
+        <tr>
+            <!-- <td class="activa">2.	Ejemplo de síntesis del proceso histórico: </td> -->
+            <td>2.	Ejemplo de síntesis del proceso histórico: </td>
+            <td class="boton"><button></button></td>
+            <td class="celdaRespuesta">Sociedad sin clases</td>
+        </tr>
+        <tr>
+            <td>3.	Para Marx, el capital es: </td>
+            <td class="boton"><button></button></td>
+            <td class="celdaRespuesta">Fuerza social</td>
+        </tr>
+        <tr>
+            <td>4.	Acción que posibilita el valor de un bien: </td>
+            <td class="boton"><button></button></td>
+            <td class="celdaRespuesta">Trabajo</td>
+        </tr>
+        <tr>
+            <td>5.	Determina el valor de los bienes: </td>
+            <td class="boton"><button></button></td>
+            <td class="celdaRespuesta">Tiempo socialmente necesario</td>
+        </tr>
+        <tr>
+            <td>6.	Actor fundamental para Marx, ya que difundió la ideología de una época: </td>
+            <!-- <td class="boton contestada"><button></button></td> -->
+            <td class="boton"><button></button></td>
+            <td class="celdaRespuesta">Estado burgués</td>
+        </tr>
+    </table>
+    <input id="botonReiniciar" type="button" value="Otra vez" class="btn_reiniciar" />
+    <div class="dialog-background" id="retroFinal" style="display: none;">
+    <div class="dialog-loading-wrapper">
+        <div class="dialog-loading-icon">
+            <img id="botonCerrarRetro" src="data:image/png;base64,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" alt="cerrar aviso" />
+            <div id="retroFinalMensaje">
+                <!-- Aquí se colocarán los mensajes de retroalimentación. -->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+</body>
+</html>
